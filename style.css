@@ -1,0 +1,57 @@
+.mx-infobox-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  text-align: center;
+  height: 0px;
+}
+
+.mx-infobox-content {
+  display: none;
+
+  position: relative;
+  animation: fade--in 0.7s ease-in;
+  height: 100%;
+}
+
+@keyframes fade--in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mx-infobox-content div{
+  padding: 10px 30px 10px 30px;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.mx-infobox-content.error div{
+  background-color: #fff5f5;
+  border: 1px solid rgba(255,0,0,0.3);
+  color: #EF5350;
+}
+
+.mx-infobox-content.success div{
+  background-color: #f5fef5;
+  border: 1px solid #8BC34A;
+  color: #5c8165;
+}
+
+.mx-infobox-content.notice div{
+  background-color: #fffcf1;
+  border: 1px solid #fff1ba;
+  color: #b5aa7a;
+}
+
+
+.mx-infobox-content.show {
+  display: inline-block;
+}

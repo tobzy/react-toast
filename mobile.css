@@ -1,0 +1,11 @@
+@media (max-width: 1366px) {
+  .mx-infobox-content div {
+    padding: 5px 30px 5px 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mx-infobox-content {
+    width: 100%;
+  }
+}
